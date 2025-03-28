@@ -79,14 +79,12 @@ const footballTeam = [
         foul: 0,
     }
 ];
-console.log(footballTeam);
 const generateRandomScore = () => {
     return Math.floor(Math.random()*102)+1;
 }
 for(let i=0 ; i<footballTeam.length ; i++){
     footballTeam[i].score= generateRandomScore();
 }
-console.log(footballTeam);
 const generateRandomfoul = () => {
     return Math.floor(Math.random()*50)+1;
 }
@@ -102,7 +100,6 @@ for(let i=0; i<footballTeam.length; i++){
     let checkscore = {};
     checkscore.score = footballTeam[i].score;
     checkscore.foul = footballTeam[i].foul;
-    console.log(checkscore);
     scoresAndFouls.push(checkscore);      
 }
 console.log(scoresAndFouls);
