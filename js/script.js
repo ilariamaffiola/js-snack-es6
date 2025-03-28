@@ -94,3 +94,18 @@ for(let i=0 ; i<footballTeam.length ; i++){
     footballTeam[i].foul= generateRandomfoul();
 }
 console.log(footballTeam);
+//ora dobbiamo creare un nuovo array che contenga solo falli e punti
+//dobbiamo creare una nuova variabile in cui inserire gli oggetti togliendo il nome
+let scoresAndFouls = [];
+//dobbiamo ciclare il nuovo array per inserire all'interno solo le proprietà score e faul
+for(let i=0; i<footballTeam.length; i++){
+    let checkscore = {};
+    checkscore.score = footballTeam[i].score;
+    checkscore.foul = footballTeam[i].foul;
+    console.log(checkscore);
+    scoresAndFouls.push(checkscore);      
+}
+console.log(scoresAndFouls);
+
+
+
