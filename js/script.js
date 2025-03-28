@@ -24,3 +24,27 @@ const bicycles = [
     }
 ];
 console.log(bicycles);
+//stampare la bici col peso minore
+//dichiaro variabili che mi serviranno nel ciclo for per salvare il peso di ogni bicicletta e una che mi salverà il peso maggiore
+//prendo il weight del primo array e lo assegno a maxWeight
+let maxWeight = bicycles[0].weight;
+
+let moreHeavy;
+//console.log maxWeight);
+//inizio un ciclo per verificare una ad una quale abbia il peso maggiore
+
+for (let i = 0 ; i<bicycles.length ; i++){
+    //verifico il peso maggiore
+    if(maxWeight> bicycles[i].weight){
+        moreHeavy= bicycles[0];
+    }
+    else{
+         //se il peso della bici è minore del peso della bici in posizione i
+        //allora la variabile moreHeavy avrà il valore dell'oggetto con il maggior peso 
+        moreHeavy = bicycles[i];
+        //e la mariabile maxWeight che prima era uguale al peso della bici in posizione 0 ora avrà il peso della bici che pesa di più
+        maxWeight = bicycles[i].weight;
+    }
+}
+console.log(moreHeavy);
+console.log(moreHeavy.name);
