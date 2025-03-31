@@ -92,6 +92,26 @@ for(let i=0 ; i<footballTeam.length ; i++){
     footballTeam[i].foul= generateRandomfoul();
 }
 console.log(footballTeam);
+/*
+POTEVO ANCHE FARLA COSI'
+function generateRandomNumbers(min, max){
+    return Math.floor(Math.random()*(max- min)+ 1) + min;
+}
+for(let i=0; i<teams.length; i++){
+teams[i].points = generateRandomNumbers(20, 100);
+teams[i].fouls = generateRandomNumbers(20, 50);
+}
+console.log(teams);
+const newTeams=[];
+for(let i=0; i<teams.length; i++){
+    newTeams.push({
+    name: teams[i].name,
+    fouls: teams[i].fouls
+    })
+}
+    
+console.log(newTeams)
+*/
 //ora dobbiamo creare un nuovo array che contenga solo falli e punti
 //dobbiamo creare una nuova variabile in cui inserire gli oggetti togliendo il nome
 let scoresAndFouls = [];
